@@ -6,13 +6,15 @@ public class Main {
 
         int people = 90;
         int maxPeople = 600;
+        int peopleRide = 40;
+        int peopleGetLine = 63;
         int min = 0;
 
         do {
-            people = people - 40  + 65 ;
-            min = min+5;
+            people -= peopleRide ;
+            people += peopleGetLine;
+            min +=5;
             System.out.printf("After %d minutes - total people is %d\n", min, people);
-
         } while (people < maxPeople);
     }
 }
